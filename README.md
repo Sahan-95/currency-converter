@@ -1,16 +1,11 @@
 # currency_converter
 
-A new Flutter project.
+This mobile app features a real-time currency converter with API-based updates.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+The application can be tested using both a simulator and a real device. I created an account to obtain the currency conversion API endpoints, which include an App ID for authentication. This App ID allows for up to 1000 requests per month.
 
-A few resources to get you started if this is your first Flutter project:
+The app architecture follows a clean architecture pattern, consisting of three layers: data, domain, and presentation. Each layer operates independently. The presentation layer includes screens and components necessary for displaying the UI. SharedPreferences is used for saving and loading data to/from local storage.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The application is almost complete, except for the functionality to load favorite items. Although I implemented this feature, it currently causes an error, so I have commented out that part of the code.
